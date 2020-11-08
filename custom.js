@@ -10,8 +10,31 @@ $(function(){
         $('.trigger').removeClass('active')
         $('.gnb').removeClass('active')
     })
+
     /* Smooth Scrolling */
-    $('.menu a').click(function (e) {
+    $('.menu a, .gototop').click(function (e) {
         $.scrollTo(this.hash || 0, 900)
     })
+
+
+    /* Change CSS with Scroll */
+    $(window).scroll(function () {
+      if($(window).scrollTop() > 50)
+      {
+        $('header, .gototop').addClass('active')
+      }
+      else
+      {
+        $('header, .gototop').removeClass('active')
+      }
+      
+  
+    })
+
+    if (window.addEventListener)
+    window.addEventListener('DOMMouseScroll', wheel, false);
+    window.onmousewheel = document.onmousewheel = wheel;
+
+  
+
 })
