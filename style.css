@@ -90,10 +90,134 @@ header {
   transform: scale(0);
 }
 
+/* ######################## Section : about ######################## */
+.about-inner {
+  background: #0dace3 url(Images/line-drawing.png) no-repeat right bottom;
+  height: 100%;
+  /* background-color: #0dace3; */
+
+}
+.about-items {
+  border: 1px solid red;
+  width: 50%;
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 100px;
+  /* padding-top: 300px;
+  padding-left: 100px; */
+}
+.item {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.item:hover h3 {
+  color: #000000;
+}
+.item:hover img {
+  filter: invert(0);
+}
+.item img {
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+  filter: invert(1);
+  transition: 0.5s;
+}
+.item h3 {
+  font-size: 28px;
+  font-weight: 500;
+  margin: 0;
+  transition: 0.5s;
+  letter-spacing: -1px;
+}
+.item span {}
+.item p {
+  overflow: hidden;
+  font-size: 18px;
+}
 
 
+/* ################## Section : awards winner ################## */
+.awards-inner { 
+  height: 100%;
+  border: 1px solid #ddd;
+ }
+.awards-inner > div { 
+  border: 1px solid #000000;
+  float: left;
+  width: 50%;
+  height: 100%;
+  position: relative;
+ }
+.about-awards{
+  background-color: #1a1f24;
+  color: #fff;
+}
+.victory-jump{
+  background-color: #fff;
+}
+.about-awards{
 
+}
+.about-heading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 70%;
+}
 
+.victory-jump{
+  background-color: #fff;
+}
+.victory-jump img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
 
+.about-heading h2{
+  margin: 0;
+}
 
+hr.bar {
+  width: 50px;
+  height: 4px;
+  border: none;
+  background-color: crimson;
+  margin: 30px auto;
+  /* margin-top: 30px; */
+  /* margin-bottom: 30px; */
+}
+
+.about-heading p {
+  color:#999;
+  font-size: 16px;
+  line-height: 1.5em;  /* 16px * 1.5 폰트크기에 비례해서 바뀌는 상대적인 값임 */
+}
+
+.about-heading a {
+
+}
+
+.view-awards {
+  color: #bbbbbb;
+  border: 1px solid #bbbbbb;
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.5s;
+  display: inline-block;
+  margin-top: 20px;
+}
+.view-awards:hover { 
+  background-color: #31c0ce;
+  color:#fff;
+  border-color: transparent;
+  /* border: 1px solid #31c0ce; */
+}
 
