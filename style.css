@@ -9,7 +9,7 @@
 
 /* Reset CSS */
 * { box-sizing: border-box; }
-ul { list-style: none; }
+ul { list-style: none; padding: 0;}
 a { text-decoration: none; }
 
 /* Default CSS */
@@ -28,7 +28,8 @@ body {
 }
 .cd-section > div {
   height: 100%;
-  position: relative;
+  /* 나중에 버그가 신경쓰여 걍 스크롤 하고 싶으면 밑에 주석처리하면 간격이 줄어든다 걍 스크롤 가능*/
+  /* position: relative; */
 }
 .content {
   background-color: #ddd;
@@ -98,7 +99,7 @@ header {
 
 }
 .about-items {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50%;
   color: #fff;
   position: absolute;
@@ -142,7 +143,7 @@ header {
 /* ################## Section : awards winner ################## */
 .awards-inner { 
   height: 100%;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
  }
 .awards-inner > div { 
   border: 1px solid #000000;
@@ -221,3 +222,171 @@ hr.bar {
   /* border: 1px solid #31c0ce; */
 }
 
+/* ################### Section : location ################### */
+.location-inner {
+  background: url(images/background-location.jpg) no-repeat center center;
+  height: 100%;
+
+}
+.location-inner:before {
+  content: '';
+  background-color: rgba(0,0,0,0.85);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.feature {
+  /* border: 1px solid red; */
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #bbbbbb;
+}
+.feature > div {
+  /* border: 1px solid #000000; */
+  float : left;
+}
+.office {
+  width: 60%;
+  padding-right: 100px;
+}
+.service {
+  width: 40%;
+}
+.office b {
+  font-weight: normal;
+}
+.office h2 {
+  color: #1db1f0;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 5px;
+}
+.office p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.office span {
+  color: #fff;
+}
+.customer {
+  margin-top: 45px;
+}
+.service-item {
+  margin-bottom: 40px;
+}
+.service-item .fa {
+  color: #1db1f0;
+  font-size: 40px;
+}
+.service-item h3 {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* ################### Section : contact ################### */
+.contact-inner {
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #ddd;
+}
+.contact-feature { 
+  /* border: 1px solid red; */
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-feature > div {
+  /* border: 1px solid #000000; */
+  /* height: 400px; */
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+.contact-form {}
+.contact-form h3 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 0px;
+}
+.contact-form h3 b {}
+.send-box {}
+.send-box label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0;
+  margin-top: 20px;
+}
+.send-box label span {
+  color: crimson;              
+  font-weight: normal; 
+}
+.send-box input[type=email],
+.send-box input[type=text],
+.send-box textarea {
+ border: 1px solid #cccccc;
+ padding: 10px;
+ border-radius: 3px;
+ outline: none; 
+ width: 100%;
+ transition: 0.5s;
+}
+.send-box input[type=email]:hover,
+.send-box input[type=text]:hover,
+.send-box textarea:hover{
+  border: 1px solid #0088cc;
+  box-shadow: 0 0 5px #0088cc;
+}
+
+.send-box input[type=email]:focus,
+.send-box input[type=text]:focus,
+.send-box textarea:focus {
+  background-color: #eee;
+}
+
+.send-box button {
+  background-color: #0088cc;
+  color:#fff;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 10px;
+  width: 200px;
+}
+.send-box button:hover {
+  background-color: #000000;
+}
+.contact-info {
+
+}
+.contact-info h4 {
+  font-weight: normal;
+  font-size: 20px;
+  margin:0;
+  margin-top: 10px;
+}
+.contact-info h4 b {
+
+}
+.contact-info ul {
+
+}
+.contact-info ul li {
+  line-height: 2em;  /* body 15px * 2 = 30px */
+}
+.contact-info ul li:last-child {
+  color: #0088cc;
+}
+.contact-info p {
+  line-height: 1.5em;
+}
