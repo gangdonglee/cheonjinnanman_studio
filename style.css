@@ -139,6 +139,64 @@ header {
   font-size: 18px;
 }
 
+/* ################### Section : plan ################### */
+.plan-inner {
+  background-color: #1d1b24;
+  height: 100%;
+}
+.plan-feature {
+  /* border: 1px solid red; */
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.plan-feature >div {
+  /* border: 1px solid yellow; */
+  height: 300px;
+  color: #bbb;
+}
+.plan-info {
+  
+}
+.plan-info > div {
+  /* border: 1px solid blue; */
+  float: left;
+}
+.plan-heading {
+  width: 70%;
+  padding-right: 50px;
+}
+.plan-heading h2 {
+  color: #fff;
+  margin: 0;
+}
+.plan-heading p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+.plan-photo {
+  width: 30%;
+}
+.plan-photo img {
+  height: 265px;
+}
+.plan-heading hr.bar {
+  background-color: dodgerblue;
+  display: inline-block;
+}
+.history-info hr.bar {
+  background-color: dodgerblue;
+  display: inline-block;
+}
+.history-slider {
+  border: 1px solid red;
+}
+.history-info {
+
+}
+
 
 /* ################## Section : awards winner ################## */
 .awards-inner { 
