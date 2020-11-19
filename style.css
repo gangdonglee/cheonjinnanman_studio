@@ -176,7 +176,7 @@ input[name = tabmenu] {
 .btn {
   /* border: 1px solid #000; */
   position: absolute;
-  left: 0px;
+  left: 0;
   bottom: 30px;
   /* border: 1px solid #000; */
   width: 25%;
@@ -205,19 +205,16 @@ input[name = tabmenu] {
   left: -6px;
   transition: 0.3s;
 }
-.btn label:hover::before {
+.btn label:hover:before {
   border: 1px solid #aaa;
 
 }
-input[id=tab1]:checked ~ .btn label[for=tab1]:before {
-  border: 1px solid #aaa;
-}
-input[id=tab2]:checked ~ .btn label[for=tab2]:before {
-  border: 1px solid #aaa;
-}
+input[id=tab1]:checked ~ .btn label[for=tab1]:before,
+input[id=tab2]:checked ~ .btn label[for=tab2]:before, 
 input[id=tab3]:checked ~ .btn label[for=tab3]:before {
   border: 1px solid #aaa;
 }
+
 input[id=tab1]:checked ~ .tabs {
   margin-left: 0;
 }
@@ -227,6 +224,78 @@ input[id=tab2]:checked ~ .tabs {
 input[id=tab3]:checked ~ .tabs {
   margin-left: -200%;
 }
+/* Project info */
+.project-info {
+  padding: 50px;
+  position: relative;
+}
+.project-info h3 {
+  font-size: 20px;
+  position: relative;
+}
+.project-info p {
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.project-info ul {
+  line-height: 2em;
+  margin: 50px 0;
+}
+.project-info ul li:before {
+  content:"\f105";
+  font-family: fontawesome;
+  margin-right: 10px;
+}
+.detail {
+  /* border: 1px solid #000; */
+  margin-bottom: 50px;
+}
+.detail div {
+  display: inline-block;
+  width: 32.5%;
+  text-align: center;
+  color: #999999;
+}
+.detail div span {
+  font-size: 36px;
+  font-weight: bold;
+  display: block;
+  color: #000000;
+}
+.project-info a {}
+.view-project {
+  background-color: #3f3f3f;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: 0.5s;
+  width: 250px;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  letter-spacing :0.5px
+}
+.view-project:hover {
+  background-color: #000000;
+  letter-spacing :2.5px
+}
+.view-project .fa {
+  transition: 0.5s;
+  margin-left: 10px
+}
+.view-project:hover .fa {
+  /* margin-left: 30px; */
+}
+.project-info::before {
+  content: attr(data-text);
+  font-size: 130px;
+  color: rgba(197, 197, 197, 0.53);
+  position: absolute;
+  top: 0;
+  left: 10px;
+
+}
+
 
 /* ################### Section : plan ################### */
 .plan-inner {
@@ -313,7 +382,7 @@ input[id=tab3]:checked ~ .tabs {
 .history-slider .slick-dots li {
   margin: 0;
 }
-.slick-
+
 /* ################## Section : awards winner ################## */
 .awards-inner { 
   height: 100%;
