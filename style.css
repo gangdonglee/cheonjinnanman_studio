@@ -757,3 +757,62 @@ hr.bar {
 .contact-info p {
   line-height: 1.5em;
 }
+
+/* ############################ SubPage : Hiring ############################ */
+.modal {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header-inner {
+  /* border: 1px solid red; */
+  width: 95%;
+  margin: auto;
+  height: 90px;
+  line-height: 90px;
+  border-bottom: 1px solid #ddd;
+}
+.modal-display {
+  font-size: 18px;
+}
+.hiring-main {
+  height: 600px;
+  border: 1px solid #000;
+  position: relative;
+}
+.hiring-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hiring-heading span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+.hiring-heading span:before,
+.hiring-heading span:after {
+  content:'';
+  height: 2px;
+  width: 50px;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+}
+.hiring-heading span:before { right: 120%; }
+.hiring-heading span:after { left: 120%; }
+.hiring-heading h1 {
+  font-size: 100px;
+  font-weight: 200;
+  margin: 0;
+  margin-top: 40px;
+}
+
+
+
+
