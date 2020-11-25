@@ -56,6 +56,8 @@ header {
 }
 .gnb-inner {
  /* border: 1px solid #000; */
+ background-color: #fff;
+ border-bottom: 1px solid #ddd;
  width: calc(100% - 40px);
  margin: auto;
  height: 60px;
@@ -68,6 +70,7 @@ header {
 .gnb {  float: right; }
 .menu { 
   display: none;
+  
  }
 .menu a{  }
 .gnb a {  }
@@ -472,6 +475,11 @@ input[id=tab3]:checked ~ .tabs {
   background-color: dodgerblue;
   display: inline-block;
 }
+
+.history-slider div {
+  outline: none; /* Slick 슬라어더 드래글 할 때 나오는 아웃라인 없애기 */
+}
+
 .history-info hr.bar {
   background-color: dodgerblue;
   display: inline-block;
@@ -937,18 +945,46 @@ hr.bar {
 }
 
 /* ############################ SubPage : Project Descriptions ############################ */
-.hiring-main.project-main {
+.hiring-main.project-main1 {
   background: url(Images/project-modal-main-01.jpg) no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
-.hiring-main.project-main .hiring-heading {
+.hiring-main.project-main2 {
+  background: url(Images/project-modal-main-02.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+.hiring-main.project-main3 {
+  background: url(Images/project-modal-main-03.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+.hiring-main.project-main1 .hiring-heading,
+.hiring-main.project-main2 .hiring-heading,
+.hiring-main.project-main3 .hiring-heading {
   color: #fff;
   width: 100%;
   animation: slidedown 1s linear both;
 }
-.hiring-main.project-main .hiring-heading h1 {
+.hiring-main.project-main1 .hiring-heading h1,
+.hiring-main.project-main2 .hiring-heading h1,
+.hiring-main.project-main3 .hiring-heading h1 {
   font-size: 70px;
+}
+
+.project-detail .hiring-info {
+  margin-bottom: 0px;
+}
+.project-detail .hiring-slogan p:before {
+  left: -100px;
+}
+
+.project-detail .hiring-heading span:before,
+.project-detail .hiring-heading span:after {
+  background-color: #fff;
 }
 
 @keyframes slidedown {
@@ -962,3 +998,8 @@ hr.bar {
   }
 }
 
+.photo.project-info {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 120px;
+}
